@@ -5,6 +5,10 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+# 本機虛擬環境（勿提交；WSL 上為 .venv/bin，Windows 上常見 venv\Scripts）
+.venv/
+venv/
+.env.venv/
 
 # Test/IDE
 .pytest_cache/
@@ -34,7 +38,7 @@ corpus/
 # User music library (personal royalty-free tracks — not part of repo)
 music_library/
 
-# Environment & credentials
+# Environment & credentials（勿提交；本機 .env 僅供本機使用）
 .env
 .env.local
 *.env
@@ -45,6 +49,9 @@ pexels_video_*.mp4
 
 # Scratch/debug scripts
 scratch/
+
+# Local Makefile backups (never ship)
+Makefile.bak*
 
 # Internal docs (strategy, handoffs, playbooks — not shipped)
 internal/
